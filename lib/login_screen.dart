@@ -1,4 +1,5 @@
 
+import 'package:employee_task_app/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -23,6 +24,12 @@ class _LoginScreenState extends State<LoginScreen> {
           content: Text('Login Successful'),
         ),
       );
+       Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const HomeScreen(),
+      ),
+    );
     }
   }
 
